@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teri Company - Best Products</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        
+        /* Navbar */
+        nav { 
+            background: #0c4a6e; 
+            color: white; 
+            padding: 15px 50px; 
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #7dd3fc; }
+        
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200');
+            background-size: cover;
+            height: 500px; 
+            color: white; 
+            text-align: center; 
+            padding-top: 180px; 
+        }
+        .hero h1 { font-size: 50px; margin-bottom: 10px; }
+        .hero button {
+            background: #0284c7;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        
+        /* Section Common */
+        .section { padding: 60px 50px; text-align: center; }
+        .section h2 { font-size: 36px; margin-bottom: 20px; color: #0c4a6e; }
+        
+        /* Products */
+        .products { 
+            display: flex; 
+            gap: 30px; 
+            justify-content: center; 
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .card { 
+            border: 1px solid #e5e7eb; 
+            width: 300px; 
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        
+        /* Footer */
+        footer { 
+            background: #0f172a; 
+            color: white; 
+            padding: 30px; 
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h2>Rishi COMPANY</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero" id="home">
+        <h1>We Build Quality Products</h1>
+        <p>Trusted by 5000+ Customers Since 2010</p>
+        <button>Contact Us</button>
+    </div>
+
+    <!-- About -->
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <p>We are leading manufacturers of industrial products. Hum quality se samjhauta nahi karte. <br> 15 saal ka experience hai hamare paas.</p>
+    </div>
+
+    <!-- Products -->
+    <div class="section" id="products" style="background:#f1f5f9;">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400">
+                <div class="card-content">
+                    <h3>Product One</h3>
+                    <p>High quality industrial grade material for all purposes.</p>
+                </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400">
+                <div class="card-content">
+                    <h3>Product Two</h3>
+                    <p>Best selling product in market. Export quality.</p>
+                </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=400">
+                <div class="card-content">
+                    <h3>Product Three</h3>
+                    <p>Eco-friendly and safe for environment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p><b>Phone:</b> +91 8094388781</p>
+        <p><b>Email:</b> rishisuman121@gamil.com</p>
+        <p><b>Address:</b> kota,baran, Rajasthan, India</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 our Company. All Rights Reserved.</p>
+    </footer>
+</body>
+</html> 
